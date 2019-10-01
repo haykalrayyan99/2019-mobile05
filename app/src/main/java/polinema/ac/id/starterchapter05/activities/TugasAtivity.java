@@ -31,7 +31,6 @@ class TugasActivity extends AppCompatActivity {
             fragmentTransaction.commit();
         }
     }
-
     public void handlerHandstand(View view) {
         FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
         HandstandFragment handstandFragment = (HandstandFragment) getSupportFragmentManager().findFragmentByTag("HANDSTAND_FRAGMENT");
