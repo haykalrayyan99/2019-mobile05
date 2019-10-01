@@ -16,17 +16,17 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public void handlerClickStaticFragment(View view) {
+    public void handlerDynamicFragment(View view) {
         Intent intent = new Intent(this, Main2Activity.class);
         startActivity(intent);
     }
 
-    public void handlerClickDynamicFragment(View view) {
+    public void handlerStaticFragment(View view) {
         Intent intent = new Intent(this, Main2Activity.class);
         startActivity(intent);
     }
 
-    public void handlerClickPraktikumFragment(View view) {
+    public void handlerTugasFragment(View view) {
         Intent intent = new Intent(this, Main2Activity.class);
         startActivity(intent);
     }

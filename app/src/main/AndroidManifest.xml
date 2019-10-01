@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activities.DynamicActivity"></activity>
+        <activity android:name=".fragments.HandstandFragment" />
+        <activity android:name=".fragments.DipsFragment" />
+        <activity android:name=".activities.TugasAtivity" />
+        <activity android:name=".activities.DynamicActivity" />
         <activity android:name=".activities.Main2Activity" />
         <activity android:name=".MainActivity">
             <intent-filter>
