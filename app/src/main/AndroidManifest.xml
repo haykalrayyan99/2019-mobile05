@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".activities.TugasActivity"></activity>
         <activity android:name=".fragments.HandstandFragment" />
         <activity android:name=".fragments.DipsFragment" />
         <activity android:name=".activities.TugasAtivity" />

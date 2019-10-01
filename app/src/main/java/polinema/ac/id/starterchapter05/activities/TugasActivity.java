@@ -11,12 +11,12 @@ import polinema.ac.id.starterchapter05.fragments.DipsFragment;
 import polinema.ac.id.starterchapter05.fragments.HandstandFragment;
 import polinema.ac.id.starterchapter05.fragments.PushupsFragment;
 
-class TugasActivity extends AppCompatActivity {
+public class TugasActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main2);
+        setContentView(R.layout.activity_tugas);
     }
 
     public void handlerPushups(View view) {
@@ -31,18 +31,20 @@ class TugasActivity extends AppCompatActivity {
             fragmentTransaction.commit();
         }
     }
-    public void handlerHandstand(View view) {
+
+    public void handlerHandshtand(View view) {
         FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
         HandstandFragment handstandFragment = (HandstandFragment) getSupportFragmentManager().findFragmentByTag("HANDSTAND_FRAGMENT");
-        if(handstandFragment != null && handstandFragment.isVisible()){
+        if (handstandFragment != null && handstandFragment.isVisible()) {
             fragmentTransaction.commit();
-        }else {
+        } else {
             fragmentTransaction.setCustomAnimations(R.anim.exit_from_right, R.anim.exit_from_left);
             fragmentTransaction.replace(R.id.tugaslayout, new HandstandFragment(), "HANDSTAND_FRAGMENT");
             fragmentTransaction.addToBackStack(null);
             fragmentTransaction.commit();
         }
     }
+
     public void handlerDips(View view) {
         FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
         DipsFragment dipsFragment = (DipsFragment) getSupportFragmentManager().findFragmentByTag("DIPS_FRAGMENT");
