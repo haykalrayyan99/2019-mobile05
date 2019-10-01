@@ -43,7 +43,6 @@ class TugasActivity extends AppCompatActivity {
             fragmentTransaction.commit();
         }
     }
-
     public void handlerDips(View view) {
         FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
         DipsFragment dipsFragment = (DipsFragment) getSupportFragmentManager().findFragmentByTag("DIPS_FRAGMENT");
